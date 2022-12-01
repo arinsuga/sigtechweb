@@ -15,7 +15,7 @@ class AddProductsubtypeIdToProductsTable extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //
-            $table->bigInteger('productsubtype_id')->after('producttype_id');
+            $table->bigInteger('productsubtype_id')->after('producttype_id')->nullable();
         });
     }
 
